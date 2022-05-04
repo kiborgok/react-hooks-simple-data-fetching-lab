@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 function App() {
   const [loading, setLoading] = useState(false);
-  const [image, setImage] = useState("");
+  const [image, setImage] = useState(null);
   useEffect(() => {
     setLoading(true);
     fetch("https://dog.ceo/api/breeds/image/random")
